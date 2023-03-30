@@ -1,7 +1,7 @@
 class Rectangle extends Shape {
 
-    Rectangle(int length, String position, Integer... width) {
-        super(length, position, width);
+    Rectangle(int length, String center, Integer... width) {
+        super(length, center, width);
     }
 
     public double calculateArea() {

@@ -1,5 +1,5 @@
 class Square extends Shape{
-    Square(int length,String position){super(length, position);}
+    Square(int length,String center){super(length, center);}
 
     @Override
     double calculateArea() {

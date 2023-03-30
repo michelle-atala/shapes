@@ -60,8 +60,8 @@ abstract class Shape {
 class Circle extends Shape {
     final double PI = 3.14;
 
-    Circle(int length, String position, Integer... width) {
-        super(length, position, width);
+    Circle(int length, String center, Integer... width) {
+        super(length, center, width);
     }
 
     @Override
