@@ -13,6 +13,12 @@ public class Main {
         System.out.println("Area:"+myRectangle.calculateArea());
         System.out.println("Perimeter:"+myRectangle.calculatePerimeter());
         myRectangle.contains("400x400");
+
+        Shape smallSquare = new Square(14,"640x640");
+        System.out.println("Square");
+        System.out.println("Area: "+smallSquare.calculateArea());
+        System.out.println("Perimeter: "+smallSquare.calculatePerimeter());
+        smallSquare.contains("400x400");
     }
 }
 
