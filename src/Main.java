@@ -26,8 +26,8 @@ abstract class Shape {
     String Posn;
     int length;
     int width;
-    Shape(int length, String position, Integer...width){
-        this.Posn = position;
+    Shape(int length, String center, Integer...width){
+        this.Posn = center;
         this.length = length;
         if (width.length > 0) this.width = width[0];
         else this.width = length;
@@ -38,21 +38,22 @@ abstract class Shape {
     abstract double calculatePerimeter();
 
     void contains(String posn){
-        String[] center = this.Posn.split("x");
+        String[] center = this.Posn.split("x");        //
         String[] position = posn.split("x");
         int positionHorizontal = Integer.parseInt(position[0]);
         int positionVertical = Integer.parseInt(position[1]);
         double checkLength = (double)(positionHorizontal - Integer.parseInt(center[0]))/38;
+        //1 cm on a screen represents ~38 pixels
         double checkWidth = (double)(positionVertical - Integer.parseInt(center[1]))/38;
 
         if(Math.abs(checkLength) < this.length && Math.abs(checkWidth) < this.width){
-            System.out.println("Shape contains the given position");
+            System.out.println("Shape contains the given position\n");
         }
         else{
             System.out.println("Shape doesn't contain the given position\n");
         }
     }
-
+// the position of the pixel doesn't exist because the length if
 
 }
 
