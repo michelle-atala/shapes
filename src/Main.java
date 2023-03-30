@@ -8,11 +8,11 @@ public class Main {
         System.out.println("Perimeter-"+myCircle.calculatePerimeter());
         myCircle.contains("400x400");
 
-        Shape myRectangle = new Rectangle (15, "400*400",9);
+        Shape myRectangle = new Rectangle (15,"500x500",9);
         System.out.println("Rectangle");
         System.out.println("Area:"+myRectangle.calculateArea());
         System.out.println("Perimeter:"+myRectangle.calculatePerimeter());
-        myRectangle.contains("500*500");
+        myRectangle.contains("400x400");
     }
 }
 
