@@ -41,7 +41,7 @@ abstract class Shape {
         double checkWidth = (double)(positionVertical - Integer.parseInt(center[1]))/38;
 
         if(Math.abs(checkLength) < this.length && Math.abs(checkWidth) < this.width){
-            System.out.println("Shape contains the given position");
+            System.out.println("Shape contains the given position\n");
         }
         else{
             System.out.println("Shape doesn't contain the given position\n");
