@@ -3,10 +3,10 @@ class Square extends Shape{
 
     @Override
     double calculateArea() {
-        return length * length;
+        return this.length * this.length;
     }
     @Override
     double calculatePerimeter(){
-        return 4*length;
+        return 4*(this.length);
     }
 }

@@ -4,8 +4,8 @@ public class Main {
 
         Shape myCircle = new Circle(12, "500x500");
         System.out.println("Circle");
-        System.out.println("Area-"+myCircle.calculateArea());
-        System.out.println("Perimeter-"+myCircle.calculatePerimeter());
+        System.out.println("Area:"+myCircle.calculateArea());
+        System.out.println("Perimeter:"+myCircle.calculatePerimeter());
         myCircle.contains("400x400");
 
         Shape myRectangle = new Rectangle (15,"500x500",9);
@@ -13,6 +13,12 @@ public class Main {
         System.out.println("Area:"+myRectangle.calculateArea());
         System.out.println("Perimeter:"+myRectangle.calculatePerimeter());
         myRectangle.contains("400x400");
+
+        Shape smallSquare = new Square(14,"640x640");
+        System.out.println("Square");
+        System.out.println("Area: "+smallSquare.calculateArea());
+        System.out.println("Perimeter: "+smallSquare.calculatePerimeter());
+        smallSquare.contains("400x400");
     }
 }
 
@@ -20,8 +26,8 @@ abstract class Shape {
     String Posn;
     int length;
     int width;
-    Shape(int length, String position, Integer...width){
-        this.Posn = position;
+    Shape(int length, String center, Integer...width){
+        this.Posn = center;
         this.length = length;
         if (width.length > 0) this.width = width[0];
         else this.width = length;
