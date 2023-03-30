@@ -4,8 +4,8 @@ public class Main {
 
         Shape myCircle = new Circle(12, "500x500");
         System.out.println("Circle");
-        System.out.println("Area-"+myCircle.calculateArea());
-        System.out.println("Perimeter-"+myCircle.calculatePerimeter());
+        System.out.println("Area:"+myCircle.calculateArea());
+        System.out.println("Perimeter:"+myCircle.calculatePerimeter());
         myCircle.contains("400x400");
 
         Shape myRectangle = new Rectangle (15,"500x500",9);
